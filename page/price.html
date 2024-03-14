@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+</head>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+        }
+      }
+    }
+  }
+</script>
+<style>
+  .checked {
+    color: orange;
+  }
+</style>
+
+<body>
+  <header></header>
+  <div class="container py-8 max-w-screen-xl flex-wrap items-center justify-between mx-auto">
+    <div class="block gap-[20px] md:grid-cols-2">
+      <div class="box_price-1">
+        <h1 class="mt-[20px] text-[20px]">Eng Qimmat tovarlar</h1>
+        <div class="product_blocks grid grid-cols-5" id="prace-for-expensive"></div>
+      </div>
+      <div class="box_price-2">
+        <h1 class="mt-[20px] text-[20px]">Eng Arzon tovarlar</h1>
+        <div class="product_blocks grid grid-cols-5" id="prace-for-cheaper"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="../components/header.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/Uzum-Refactor/js/price.js"></script>
+</body>
+
+</html>
